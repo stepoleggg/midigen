@@ -6,7 +6,7 @@ from keras.utils import np_utils
 import json
 import save_load_model
 
-with open("out.json") as f:
+with open("data_from_midi.json") as f:
     data = json.loads(f.read())
 
 size = 20
