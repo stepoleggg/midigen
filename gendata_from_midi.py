@@ -1,5 +1,4 @@
 import midi
-import sys
 import os
 import json
 
@@ -15,6 +14,6 @@ for file in files_list:
                 out[-1][-1].append(el.tick)
                 out[-1][-1].append(el.pitch)
                 out[-1][-1].append(el.velocity)
-with open("out.json", "w") as f:
+with open("data_from_midi.json", "w") as f:
     json.dump(out, f)
 
